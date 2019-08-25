@@ -1,5 +1,5 @@
-sudo apt-get update
-sudo apt-get install build-essential libssl-dev
+sudo apt-get -y update
+sudo apt-get -y install build-essential libssl-dev
 
 #!/bin/bash
 
