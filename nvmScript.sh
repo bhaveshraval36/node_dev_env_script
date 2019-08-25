@@ -6,7 +6,7 @@ sudo apt-get -y install build-essential libssl-dev
 set -e
 
 nvm_has() {
-  type "$11" > /dev/null 2>&1
+  type "$1" > /dev/null 2>&1
 }
 
 if [ -z "$NVM_DIR" ]; then
