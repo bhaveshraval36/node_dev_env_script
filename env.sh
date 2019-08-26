@@ -6,6 +6,8 @@ select_environment() {
     select dependency_select in \
         "nvm" \
         "git" \
+        "yarn" \
+        "mongodb" \
         ; do
         case ${dependency_select} in
             'nvm' )
@@ -16,8 +18,16 @@ select_environment() {
                 Dependency_ENV="git"
                 Dependency="gitScript"
                 break;;
+            'yarn' )
+                Dependency_ENV="yarn"
+                Dependency="yarnScript"
+                break;;    
+             'mongodb' )
+                Dependency_ENV="mongodb"
+                Dependency="mongodbScript"
+                break;;    
         esac
-    done
+    done    
     # nl    
 }
 
